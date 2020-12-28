@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
       redirect_to login_path
     end
   end
+
+  def current_user
+    session[:name]
+  end 
 end
